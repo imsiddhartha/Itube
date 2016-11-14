@@ -1,0 +1,188 @@
+<?php
+echo'
+<html>
+<head>
+<title>iTuBe</title>
+<style type="text/css">
+*{
+	margin:0px;
+	border:0px;
+}
+#top_header{
+	//background:#f1f1f1;
+	background:#7AD2EB;
+	border-bottom: 1px solid #e8e8e8;
+	color:white;
+	padding :10px;
+	margin-top:0;
+}
+#top_header #txt_search{
+float:center;
+-webkit-box-flex:1;
+margin: 0;
+margin-left:10%;
+border: 0;
+outline: none;
+font-size: 16px;
+font-family: arial,sans-serif;
+padding-top: 6px;
+padding-bottom: 8px;
+min-width: 40%;
+width: auto!important;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+direction: ltr;
+unicode-bidi: embed;
+background-color: white;
+border: 2px inset;
+cursor: auto;
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+height:29px;
+}
+#top_header #b_search {
+-webkit-box-flex:1;
+border-color: #1b7fcc;
+background: #1b7fcc;
+color: #fff;
+margin-top: 1%;
+margin-left: 0;
+height: 29px;
+border: 1px solid #DDD;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #DDD inset;
+	padding: 5px 10px;
+	outline: none;
+}
+#top_header #b_signin {
+border-color: #1b7fcc;
+background: #1b7fcc;
+color: #fff;
+float:right;
+margin-top: 1%;
+margin-left: 25px;
+height: 29px;
+-webkit-box-flex:1;
+border: 1px solid #DDD;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #DDD inset;
+	padding: 5px 10px;
+	outline: none;
+}
+
+#username{ font-family:helvetica;
+           font-size:12pt
+		   
+}
+#end_footer{position:absolute;
+            top:100%;
+			width: 100%;
+			background:#f1f1f1;
+		clear:both;
+		border-top:1px solid black;
+		text-align:center;
+		padding:0.5px;}
+
+#top_menu{
+	background:#f1f1f1;
+	color:#1b7fcc;
+	font:bold 10pt helvetica;
+}
+#top_menu li{
+	display:inline-block;
+	padding:5px;
+	list-style:none;
+	/*margin-bottom:15px;*/
+}
+		
+#b_upload {
+-webkit-box-flex:0;
+border-color: #1b7fcc;
+background: #1b7fcc;
+color: #fff;
+margin-top: 1%;
+margin-left: 7%;
+height: 29px;
+border: 1px solid #DDD;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #DDD inset;
+	padding: 5px 10px;
+	outline: none;
+}
+#lefter{position: relative;
+		float:left;
+		width:20%;
+		height: 350px;
+		margin-top: 40px;
+		margin:20px 0px;/*imp to be 0*/
+		padding:30px;
+		background:#f1f1f1;
+}
+#profile{position:relative;
+margin-left:36%;}
+#side_news{position:relative;
+		float:right;
+		height:350px;
+		width:20%;
+		margin:20px 0px;/*imp to be 0*/
+		margin-top:40px; 
+		padding:30px;
+		background:#f1f1f1;
+		//background:#66cccc
+}
+</style>
+</head>
+<body>
+<header id="top_header">
+			<h1 > &nbsp;iTuBe  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			  <input id="txt_search" type="text" name ="txt_search"  />
+			  <input id="b_search" type="button" name ="b_search" value="Search" onclick="search.php"/> 
+			  <input id="b_upload" type="button" name ="b_upload" value="Upload" />
+			  <span id="username">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp User Name</span>
+			  <input id="b_signin" type="submit" name ="b_logout" value="Log out"  onclick="logout.php"/>
+			  </h1>              		
+			  </header>
+			  
+<aside id="lefter">
+			<h3>Users Subscribed<h3>
+			
+		</aside>
+
+<aside id="side_news">
+				<h3>Search History<h3>
+			<h4>abcd</h4>
+			<h4>defg</h4>
+			<h4>hijk</h4>
+			<h4>dasf,</h4>
+		</aside>
+		
+	<div id="profile">
+	<img src="">
+    User Name :'.$user_name.'<br>
+	Name:'.$fname.' '.$lname.'<br>
+	email:'.$email.'     <input type="submit" name="btn_changeid" value="Change Your Email"><br>
+    <a href="">Change Password</a>	<br>
+	
+	
+	</div>
+
+		
+</div>		
+		<footer id="end_footer">
+			<nav id="top_menu">
+			<h1>iVideos</h1>
+			<ul>
+				<li>About Us</li>
+				<li>Developers</li>
+				<li>Contact Us</li>
+			</ul>
+		</nav>
+		</footer>
+</body>
+</html>';
+?>

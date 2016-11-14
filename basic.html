@@ -1,0 +1,231 @@
+<!DOCTYPE html">
+<html>
+<head>
+<title>iTuBe</title>
+
+
+
+<style type="text/css">
+
+body{ background-image:url(bluestar1.png);
+      background-repeat:no-repeat;
+	  background-position:65px 60px;
+	  font-family:helvetica;
+	  font-size:14pt;
+       
+	}
+
+#end_footer{position:absolute;
+            top:100%;
+			width: 100%;
+			background:#f1f1f1;
+		clear:both;
+		border-top:1px solid black;
+		text-align:center;
+		padding:0.5px;}
+
+#top_menu{
+	background:#f1f1f1;
+	color:#1b7fcc;
+	font:bold 10pt helvetica;
+}
+#top_menu li{
+	display:inline-block;
+	padding:5px;
+	list-style:none;
+	/*margin-bottom:15px;*/
+}	
+	
+span {font-weight:bold;
+      font-size:20pt;
+	  color:#1b7fcc;
+	 }
+
+#redbar {//height:72px; width:100%;
+         position:absolute;
+         //background-color:#7AD2EB;
+		 font-family:helvetica;
+		 top:0px;
+		 left:0px;
+		 background:#7AD2EB;
+	     border-bottom: 1px solid #e8e8e8;
+	     //color:white;
+		 //margin-top:0;
+		 font-size:22pt;
+		 padding :10px;
+		 color:white;
+		 border-bottom: 1px solid #e8e8e8;
+		 
+		}
+#txtname { width: 150px; font-family:arial;}
+ 
+#txtpass { width: 150px; font-family:arial;}
+
+#sign_in_btn {  /* color:white;
+                 font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+                 font-size:70%;
+                  padding-left:20px;
+				 padding-top:2px;
+				 padding-bottom:2px;
+				 padding-right:20px;
+                 background:repeat-x center #ED394B;
+                 background-color:#ED394B;
+                 border:1px solid #ED394B;
+                 -moz-border-radius:10px;
+                 -webkit-border-radius:10px;
+                 border-radius:10px;
+                 border-bottom:1px solid #9f9f9f;
+                 -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+                 -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+                 box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);*/
+				 -webkit-box-flex:1;
+					border-color: #1b7fcc;
+					background: #1b7fcc;
+					color: #fff;
+					margin-top: 1%;
+					margin-left: 0;
+					height: 29px;
+					border: 1px solid #DDD;
+					border-radius: 5px;
+					box-shadow: 0 0 5px #DDD inset;
+					padding: 5px 10px;
+					outline: none;
+                 cursor:pointer;
+              
+			 
+   			 }
+
+#container {position:absolute;
+            top:130px; 
+			left:58%;
+		   }  
+
+		   
+		   
+#sign_up_btn{  /* color:white;
+                 font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+                 font-size:70%;
+                  padding-left:20px;
+				 padding-top:2px;
+				 padding-bottom:2px;
+				 padding-right:20px;
+                 background:repeat-x center #ED394B;
+                 background-color:#ED394B;
+                 border:1px solid #ED394B;
+                 -moz-border-radius:10px;
+                 -webkit-border-radius:10px;
+                 border-radius:10px;
+                 border-bottom:1px solid #9f9f9f;
+                 -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+                 -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+                 box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);*/
+				 -webkit-box-flex:1;
+					border-color: #1b7fcc;
+					background: #1b7fcc;
+					color: #fff;
+					margin-top: 1%;
+					margin-left: 0;
+					height: 35px;
+					width: 50px
+					border: 1px solid #DDD;
+					border-radius: 5px;
+					box-shadow: 0 0 5px #DDD inset;
+					padding: 5px 10px;
+					outline: none;
+                 cursor:pointer;
+				 }
+          
+</style>
+</head>
+<body>
+
+<form action="verify.php" method="GET">
+<div id="redbar"  >&nbsp&nbsp&nbsp&nbsp&nbsp&nbspiTuBe&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+<input type="text" name="txtname"  id="txtname" placeholder="user name">
+<input type="password" name="txtpass"  id="txtpass" placeholder="password">
+<input type="submit" name="btnsign_in" value="Sign In" id="sign_in_btn"></div>
+</form>
+
+<form action="insert.php" method="GET" name="form2">
+<div id="container">
+<table border=0>
+<tr><td colspan=2 ><span><center>WElCOME TO iTuBe</center></span></td></tr>
+<tr>
+    <td><br><br>First Name<br></td>
+	<td colspan=2><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="txt_fname" id="txt_container"><br></td>	
+</tr>
+<tr>
+    <td>Last Name<br></td>
+	<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="txt_lname" id="txt_container"><br></td>	
+</tr>
+<tr>
+    <td>User Name<br></td>
+	<td colspan=2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="txt_user_name" id="txt_container"><br></td>	
+</tr>
+<tr>
+    <td>Phone Number<br></td>
+	<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text"  name="txt_phone_number" id="txt_container" onblur="phonenumber(document.form2.txt_phone_tumber)"><br></td>	
+</tr>
+
+<tr>
+    <td>New Password<br></td>
+	<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="password" name="txt_npass" id="txt_container" ><br></td>	
+</tr>
+<tr>
+    <td>Confirm Password<br></td>
+	<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="password" name="txt_cpass" id="txt_container"><br></td>	
+</tr>
+<tr>
+    <td>Email<br></td>
+	<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="txt_email" id="txt_container"><br></td>	
+</tr>
+<tr>
+    <td>Gender<br></td>
+	<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Male<input type="radio" name="gender" value="Male" checked="checked">&nbsp&nbsp&nbsp&nbsp Female<input type="radio" name="radio_gender" value="Female"><br></td>	
+</tr>
+<tr>
+    <td>Date Of Birth<br></td>
+	<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select name="cmb_month">
+       	  <option>01</option>
+		  <option>02</option>
+		  <option>03</option>
+		  <option>04</option>
+		  <option>05</option>
+		  <option>06</option>
+		  <option>07</option>
+		  <option>08</option>
+		  <option>09</option>
+		  <option>10</option>
+		  <option>11</option>
+		  <option>12</option>
+		</select>
+		<select name="cmb_year">
+		  <option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option><option>1989</option><option>1988</option><option>1987</option><option>1986</option>1985<option>1984</option>
+		</select>
+		<select name="cmb_date">
+		  <option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
+		</select><br></td>
+</tr><tr><td><br></td></tr>
+
+</tr>
+<tr>
+<td colspan=2><center><br><br><input type="submit" name="btn_sign_up" value="Sign Up For iVideos" id="sign_up_btn" ><center></td>
+</tr>
+</table>
+</div>
+</form>
+
+<footer id="end_footer">
+			<nav id="top_menu">
+			<h1>iTuBe</h1>
+			<ul>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Developers</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
+		</nav>
+		</footer>
+		
+		
+</body>
+</html>
